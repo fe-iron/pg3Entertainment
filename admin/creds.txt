@@ -1,0 +1,10 @@
+FTP -> pg3 Entertainment
+password: +$ND/3>4pS
+hostname: ftp.apnaprachar.com
+username: pg3entertainment@pg3entertainment.com
+
+
+Database Details
+user: apnapaqh_u726488540_apna_admin
+password: O>e6py4?s0
+host: apnapaqh_pg3entertainment

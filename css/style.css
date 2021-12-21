@@ -1,0 +1,654 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
+
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+
+.carousel-caption {
+  position: absolute;
+  right: 25%;
+  bottom: 50px;
+  left: 25%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
+  background-color: #e70b0b7d;
+}
+
+
+
+.registration{
+ /* background-image: url("../images/banner/dark_image.jpg");*/
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: cover;
+ background-attachment: fixed;
+ padding: 3rem 0rem;
+
+}
+
+.registration .card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 3px solid rgba(0,0,0,.125);
+  border-radius: 0rem;
+}
+
+
+.registration  .col-md-4 .card{
+ box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+ -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+ -moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+}
+
+
+.registration .card{
+  position: relative;
+}
+
+
+.registration .card .open_registration{
+  position: absolute;
+  top: 70px;
+  right: -74px;
+  transform: rotate(90deg);
+  background-image: linear-gradient(
+    -40deg, rgb(249, 52, 82) 0%, rgb(192, 21, 39) 17%, rgb(173, 10, 38) 35%, rgb(148, 13, 18) 64%, rgb(98, 9, 24) 99%);
+  padding: .7rem 1rem;
+  color: white;
+  box-shadow: -2px 3px 11px -2px rgba(0,0,0,0.75);
+  -webkit-box-shadow: -2px 3px 11px -2px rgb(58 17 17 / 93%);
+  -moz-box-shadow: -2px 3px 11px -2px rgba(0,0,0,0.75);
+}
+
+
+
+
+/* [1] The container */
+.registration .card {
+  height: 230px; /* [1.1] Set it as per your need */
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+/* [2] Transition property for smooth transformation of images */
+.registration .card img{
+  transition: transform 1s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.registration .card:hover img{
+  transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+.our-model{
+  padding: 3rem 0rem;
+  background-image: url("../images/banner/dark_model_image.jpg");
+  background-color: rgba(248, 247, 216, 0.7);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  position: relative;
+  background-attachment: fixed;
+  z-index: 1
+}
+
+
+
+
+
+.our-model:after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: -webkit-linear-gradient( 
+    5deg, #f73347 0%, rgba(18, 1, 248, 0.2) 100%);
+  background: -webkit-linear-gradient( 
+    5deg, #c73443a3 0%, rgba(18, 1, 248, 0.2) 100%);
+  background: -ms-linear-gradient(5deg, #f73347 0%, rgba(18, 1, 248, 0.2) 100%);
+}
+
+
+
+.our-model{
+  padding: 3rem 0rem;
+}
+
+/* [1] The container */
+.our-model .card {
+  height: 300px; /* [1.1] Set it as per your need */
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+/* [2] Transition property for smooth transformation of images */
+.our-model .card img , .registration .card img{
+  transition: transform 1s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.our-model .card:hover img , .registration .card:hover img{
+  transform: scale(1.1);
+}
+
+
+
+.our-model::-webkit-scrollbar {
+  display: none!important;
+}
+
+
+.our-model::-ms-scrollbar {
+ display: none!important;
+}
+
+
+.our-model::-moz-scrollbar {
+  display: none!important;
+}
+
+
+
+.overlay {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate( -50%,-50% );
+  height: 90%;
+  width: 90%;
+  opacity: 0;
+  transition: .5s ease-out;
+  background: -webkit-linear-gradient( 
+    5deg, #f73347 0%, rgba(18, 1, 248, 0.2) 100%);
+  background: -webkit-linear-gradient( 
+    5deg, #c73443e0 0%, rgba(18, 1, 248, 0.2) 100%);
+  background: -ms-linear-gradient(5deg, #f73347 0%, rgba(18, 1, 248, 0.2) 100%);
+}
+
+.our-model .card:hover .overlay,.star_achiever .card:hover .overlay {
+  opacity: 1;
+}
+
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+.past_event{
+  padding: 3rem 0rem;
+}
+
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: #fff;
+  background-color: #dc3545;
+}
+
+.nav-pills .nav-link {
+  border-radius: 0rem;
+  color: black;
+}
+
+
+
+.past_event .tab-content ul {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  display: flex;
+}
+.past_event .tab-content ul li{
+ margin: 10px;
+ border:1px solid #dc3545;
+ border-radius: 5px;
+ box-shadow: 0px 0px 18px -4px rgba(0,0,0,0.66);
+-webkit-box-shadow: 0px 0px 18px -4px rgba(0,0,0,0.66);
+-moz-box-shadow: 0px 0px 18px -4px rgba(0,0,0,0.66);
+}
+
+.past_event .tab-content ul li img{
+ height: 500px; 
+ border-radius: 5px;
+}
+
+.past_event_contents{
+  padding: 1.25rem;
+}
+
+.past_event_contents p{
+  margin-bottom: 0rem;
+}
+
+
+
+
+.past_event .nav-pills .nav-link {
+    border-radius: 0rem;
+    border: 1px solid #dc3545;
+    margin: 5px 2px;
+}
+
+
+
+.media-coverage{
+  padding: 3rem 0rem;
+  padding: 3rem 0rem;
+  background-image: url("../images/banner/dark_model_image.jpg");
+  background-color: rgba(248, 247, 216, 0.7);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  position: relative;
+  background-attachment: fixed;
+  z-index: 1
+  
+}
+
+
+.media-coverage:after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: -webkit-linear-gradient( 
+    5deg, #f73347 0%, rgba(18, 1, 248, 0.2) 100%);
+  background: -webkit-linear-gradient( 
+    5deg, #c73443a3 0%, rgba(18, 1, 248, 0.2) 100%);
+  background: -ms-linear-gradient(5deg, #f73347 0%, rgba(18, 1, 248, 0.2) 100%);
+}
+
+
+.ml2 {
+  font-weight: 900;
+  /*font-size: 2.5em;*/
+}
+
+.ml2 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+
+
+
+
+
+.star_achiever{
+  padding: 3rem 0rem;
+}
+
+
+.about_us{
+  padding: 3rem 0rem;
+  background-image: url("../images/banner/dark_model_image.jpg");
+  background-color: rgba(248, 247, 216, 0.7);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  position: relative;
+  background-attachment: fixed;
+  z-index: 1
+
+}
+
+
+.about_us:after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: -webkit-linear-gradient( 
+    5deg, #f73347 0%, rgba(18, 1, 248, 0.2) 100%);
+  background: -webkit-linear-gradient( 
+    5deg, #c73443a3 0%, rgba(18, 1, 248, 0.2) 100%);
+  background: -ms-linear-gradient(5deg, #f73347 0%, rgba(18, 1, 248, 0.2) 100%);
+}
+
+
+.about_us .img-fluid {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid #dc3545;
+    box-shadow: -1px 1px 5px 0px rgb(0 0 0 / 75%);
+    -webkit-box-shadow: -1px 1px 5px 0px rgb(0 0 0 / 75%);
+    -moz-box-shadow: -1px 1px 5px 0px rgba(0,0,0,0.75);
+}
+
+
+.gallery{
+   padding: 3rem 0rem;
+}
+
+.gallery ul{
+  display: flex;
+  height: auto;
+ overflow-x: scroll;;
+ overflow-y: hidden;
+ white-space: nowrap;
+
+  flex-direction:row;
+
+}
+
+.gallery ul li img{
+  width: 320px;
+  height: 250px;
+  margin: 10px;
+  border:1px solid #dc3545;
+  border-radius: 5px;
+  box-shadow: 0px 0px 18px -4px rgba(0,0,0,0.66);
+-webkit-box-shadow: 0px 0px 18px -4px rgba(0,0,0,0.66);
+-moz-box-shadow: 0px 0px 18px -4px rgba(0,0,0,0.66);
+
+}
+
+
+
+.lfw{
+  padding: 3rem 0rem;
+  background-image: url("../images/lfw.jpeg");
+  background-color: rgba(248, 247, 216, 0.7);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  color: white;
+  position: relative;
+  background-attachment: fixed;
+  z-index: 1
+}
+
+
+.lfw:after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: -webkit-linear-gradient( 
+    5deg, #f73347 0%, rgba(18, 1, 248, 0.2) 100%);
+  background: -webkit-linear-gradient( 
+    5deg, #c73443e8 0%, rgb(220 53 69 / 35%) 100%);
+  background: -ms-linear-gradient(5deg, #f73347 0%, rgba(18, 1, 248, 0.2) 100%);
+}
+
+
+.lfw .col-md div{
+  display: flex;
+  align-items:center;
+  margin-top: .5rem;
+}
+
+
+.lfw .col-md div p{
+  margin-bottom: 0px;
+}
+
+
+.lfw .col-md img{
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  padding: 0.4rem;
+  border-radius: 21px;
+  margin-right: 10px;
+}
+
+
+
+
+/*
+.our-model{
+  padding: 5rem 0rem;
+}
+
+
+
+
+
+
+
+.our-model .right{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+.our-model .right  h2 {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.our-model .right h4{
+
+display: flex;
+
+align-items: center;
+
+margin-bottom: 0px;
+
+font-weight: 800;
+
+letter-spacing: 1px;
+
+font-size: 40px;
+
+color: #dc3545;
+}
+
+.our-model .right img{
+  width: 130px;
+}
+
+
+*/
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+ /* [1] The container */
+ .registration .card {
+  height: 194px; /* [1.1] Set it as per your need */
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+.registration .card .open_registration {
+  position: absolute;
+  top: 50px;
+  right: -50px;
+  transform: rotate(
+    90deg);
+  background-image: linear-gradient( 
+    -40deg, rgb(249, 52, 82) 0%, rgb(192, 21, 39) 17%, rgb(173, 10, 38) 35%, rgb(148, 13, 18) 64%, rgb(98, 9, 24) 99%);
+  padding: 0.5rem
+  0.5rem
+  ;
+  color: white;
+  font-size: 12px;
+}
+
+
+}
+
+
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 768px) and (max-width: 992px) {
+
+ /* [1] The container */
+ .registration .card {
+  height: 141px; /* [1.1] Set it as per your need */
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+
+/* [1] The container */
+.our-model .card {
+  height: 220px; /* [1.1] Set it as per your need */
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+
+.registration .card .open_registration {
+  position: absolute;
+  top: 50px;
+  right: -50px;
+  transform: rotate(
+    90deg);
+  background-image: linear-gradient( 
+    -40deg, rgb(249, 52, 82) 0%, rgb(192, 21, 39) 17%, rgb(173, 10, 38) 35%, rgb(148, 13, 18) 64%, rgb(98, 9, 24) 99%);
+  padding: 0.5rem
+  0.5rem
+  ;
+  color: white;
+  font-size: 12px;
+}
+
+
+
+
+
+}
+
+
+
+
+@media(max-width: 768px){
+ /* [1] The container */
+.our-model .card {
+  height: 220px; /* [1.1] Set it as per your need */
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+.about_us h4{
+  margin-top: 25px;
+}
+
+
+.past_event .tab-content ul li img{
+  height: 350px;
+  
+ 
+ }
+
+}
+
+
+@media(max-width: 576px){
+  .past_event .list-inline .list-inline-item img{
+    height: 240px;
+    
+
+  }
+
+
+  .gallery ul li img{
+    width: 200px;
+    height: 200px;
+
+  }
+
+
+  .carousel-caption {
+    position: absolute;
+    right: 25%;
+    bottom: 10px;
+    left: 25%;
+    z-index: 10;
+    padding-top: 13px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    color: #fff;
+    text-align: center;
+    background-color: #e70b0b7d;
+  }
+
+  .carousel-caption h2{
+    font-size: 1rem;
+  }
+
+
+  .carousel-caption p{
+
+   font-size: .8rem;
+ }
+
+
+
+
+}
+
+
+
+@media(min-width: 576px){
+  .banner .carousel img{
+    width: 100%;
+    height: 600px;
+
+  }
+
+/*
+.our-model .img-fluid{
+  width: inherit;
+  }*/
+
+}
